@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-stux
+  namespace: jvm-build-hpfd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:de96ee8a8b9feb428759b76e9af2f0670b23eccc98f524f576cba84807553407
+        name: container-image
+        resources: {}
+status: {}
