@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: jvm-build-suite-component-stux
     app.kubernetes.io/part-of: jvm-build-suite-application-zjxv
-  name: jvm-build-suite-componentnyoe
+  name: jvm-build-suite-componentphuk
   namespace: jvm-build-hpfd-tenant
 spec:
   port:

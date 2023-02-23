@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-stux
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:148950efcb734aca845c82ecd2ffe936
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:de96ee8a8b9feb428759b76e9af2f0670b23eccc98f524f576cba84807553407
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
