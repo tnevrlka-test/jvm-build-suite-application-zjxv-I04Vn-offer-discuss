@@ -1,0 +1,22 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: jvm-build-suite-application-zjxv
+    appstudio.openshift.io/component: jvm-build-suite-component-stux
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: jvm-build-suite-component-stux
+  namespace: jvm-build-hpfd-tenant
+spec:
+  git_provider:
+    secret:
+      key: github.token
+      name: pipelines-as-code-secret
+    webhook_secret:
+      key: https___github.com_redhat-appstudio-qe_hacbs-test-project
+      name: pipelines-as-code-webhooks-secret
+  url: https://github.com/redhat-appstudio-qe/hacbs-test-project
